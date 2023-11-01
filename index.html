@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <script src="https://kit.fontawesome.com/97117bfa16.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+<div id="header">
+  <div class="container">
+    <nav>
+      <a class="logo">Zanj.</a>
+      <ul id="menu">
+        <li><a href="#header">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <i class="fa-solid fa-x" onclick="closemenu()"></i>
+      </ul>
+      <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+      
+    </nav>
+    <div class="header-text">
+      <p>FRONTEND DEV</p>
+      <h1>Hi, I'm <span>Zanjoe David</span><br>Beginner In Frontend</h1>
+    </div>
+  </div>
+</div>
+  <!-- About Me -->
+<div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="vector.png">
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-title">About Me</h1>
+          <p>I'm a passionate 13-year-old aspiring web developer with a strong desire to learn and grow in the field of web development. My journey began at a young age, and I'm excited to embark on this path, exploring the limitless possibilities of the digital world. While I may be a beginner, my dedication and enthusiasm drive me to continuously improve my skills and tackle new challenges.</p>
+
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+            <p class="tab-links" onclick="opentab('education')">Education</p>
+          </div>
+
+          <div class="tab-contents active-tab" id="skills">
+            <ul>
+              <li><span>HTML</span><br></li>
+              <li><span>CSS</span><br></li>
+              <li><span>JS</span><br></li>
+            </ul>
+          </div>
+
+          <div class="tab-contents" id="experience">
+            <ul>
+              <li><span>Self Studying</span><br>Continously self studying web development.</li>
+            </ul>
+          </div>
+
+          <div class="tab-contents" id="education">
+            <ul>
+              <li><span>9 / 1/ 23</span><br>Self Studying...</li>
+              <li><span>10 / 1 / 23</span><br>Self Studying...</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>  
+ </div>
+
+  <!-- ---Services--- -->
+
+  <div id="services">
+    <div class="container">
+      <h1 class="sub-title">My Services</h1>
+      <div class="services-list">
+        <div>
+          <i class="fa-solid fa-crop-simple"></i>
+          <h2>Web Design</h2>
+          <p>Designing Web App</p>
+            <a href="#">Learn More</a>
+        </div>
+
+        <div>
+          <i class="fa-solid fa-user-ninja"></i>
+          <h2>Hitman</h2>
+          <p>Sino papatira mo boss?</p>
+            <a href="#">Learn More</a>
+        </div>
+
+        <div>
+          <i class="fa-solid fa-code"></i>
+          <h2>Web Development</h2>
+          <p>Developing Web App</p>
+            <a href="#">Learn Mere</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- ---Portfolio-- -->
+
+  <div id="portfolio">
+    <div class="container">
+       <h1 class="sub-title">My Works</h1>
+      
+        <div class="work-list">
+          <div class="work">
+            <img src="work1.png">
+              <div class="layer">
+              <h3>Ezekiel</h3>
+              <p>Our section website.</p>
+              <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+
+          <div class="work">
+            <img src="work2.png">
+              <div class="layer">
+              <h3>Personal Portfolio</h3>
+              <p>My Personal Portfolio</p>
+              <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+
+          <div class="work">
+            <img src="work3.png">
+              <div class="layer">
+              <h3>Prank Proposal</h3>
+              <p>Prank poroposal for your crush</p>
+              <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+        </div>
+      <a href="#" class="btn">See More</a>
+    </div>
+  </div>
+  
+<!-- ---Contact--- -->
+
+  <div id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="contact-left">
+          <h1 class="sub-title">Contact Me</h1>
+          <p><i class="fa-solid fa-envelope"></i>davidzanjoe3@gmail.com</p>
+          <p><i class="fa-solid fa-phone"></i>09706671264</p>
+          <div class="social-icons">
+            <a href="https://facebook.com/profile.php?id=100078516793038"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook-messenger"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          </div>
+          <a href="#" class="btn btn2">Let's Talk</a>
+        </div>
+        <div class="contact-right">
+          <form>
+            <input type="text" name="Name" placeholder='Your Name' required>
+            <input type="email" name="email" placeholder='Your Email Adress' required>
+            <textarea name="Message" placeholder="Your Message" rows="6" required></textarea>
+            <button type="submit" class="btn btn2">Submit</button>
+
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="copyright">
+    <p><i class="fa-solid fa-copyright"></i> Zanjoe M. David, 2023</p>
+  </div>
+  
+  <script src="script.js"></script>
+
+</body>
+
+</html>
